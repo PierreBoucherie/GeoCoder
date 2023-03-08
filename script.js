@@ -45,8 +45,9 @@ const getCoordinates = () => {
 // Clears previous results and display results to webpage
 const displaySuggestions = (event) => {
     event.preventDefault();
-    // latitude.innerHTML = 'Latitude: ';
-    // longitude.innerHTML = 'Longitude: ';
+    latitude.innerHTML = '';
+    longitude.innerHTML = '';
+    label.innerHTML = '';
     getCoordinates()
 }
 
