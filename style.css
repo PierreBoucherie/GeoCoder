@@ -1,22 +1,55 @@
 * {
+margin: 0;
+/* border: red dotted 1px; */
+}
+html {
+
     font-size: 16px;
-    margin: 10px 0;
-    font-family: Poppins,"sans-serif";
-    
-    /* border: red dotted 1px; */
 }
-
 body {
-    width: 100%;
+    font-family: Poppins,"sans-serif"; 
+    /* max-width: 1600px; */
     display: block;
+    text-align: center;
 }
- h1 {
-    margin: 5px auto;
-    padding: 5px;
-    font-size: 20px;
- }   
 
-.response {
+header {
+    height: 150px;
+    vertical-align: center;
+}
+
+ h1 {
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 500;
+}   
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+#input {
+    width: 400px;
+    height: 20px;
+    margin-bottom: 2rem;
+}
+
+#submit {
+    height: 25px;
+
+}
+
+form {
+    text-align: center;
+    margin: 0 auto;
+ }
+
+.response p {
+}
+
+.response p, .adress p {
     display: inline-block;
-    width: 30%;
+    margin: 0.8rem 1rem;
 }

@@ -3,7 +3,7 @@
     <head>
         <title>GeoCoder</title>
         <meta charset="UTF-8">
-        <link type="text/css" href="reset.css" rel="stylesheet">
+        <!-- <link type="text/css" href="reset.css" rel="stylesheet"> -->
         <link type="text/css" href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +11,24 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
+<header>
+    <h1>GeoCoder</h1>
+</header>
 
-        <h1>GeoCoder</h1>
-
-        <h3>Entrez une adresse</h3>
+        <h6>Entrez une adresse...</h6>
         <form id="form" autocomplete="on">
-            <input id="input" type="text" value="">
+            <input id="input" type="text" value="" placeholder="20 avenue Leon Blum, Paris">
             <button id="submit">SUBMIT</button>
         </form>
         
-            <div class="response">
-                <p>Adresse: </p><p id="label"></p>
+            <div class="adress">
+                <p>Adresse: </p><p id="label">21, rue Carpeaux,Paris</p>
             </div>
             <div class="response">
-                <p>Latitude: </p><p id="latitude"></p>
+                <p>Latitude: </p><p id="latitude">48,891178</p>
             </div>
             <div class="response">
-                <p>Longitude: </p><p id="longitude"></p>
+                <p>Longitude: </p><p id="longitude">2,33174</p>
             </div>
 
             <script src="./script.js"></script>
