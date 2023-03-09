@@ -1,5 +1,5 @@
-// import default from './helper.js';
-
+// https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/search?q=21%20rue%20carpeaux%20Paris&limit=10&returntruegeometry=false
+//a&terr=93160%2C97%2C77300&type=StreetAddress&maximumResponses=10
 //Geocoder API variable
 const baseUrl ='https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/search?q=';
 const suffix ='&limit=10&returntruegeometry=false';
@@ -10,13 +10,14 @@ const latitude = document.getElementById('latitude');
 const longitude = document.getElementById('longitude');
 const label = document.getElementById('label');
 const dlist = document.querySelector('#dlist');
+const div1 = document.querySelector('#div1');
+const div2 = document.querySelector('#div2');
 // const hsix = document.getElementById('test');
 
 //Auto completion API variable
 const suffixComp = '&type=StreetAddress&maximumResponses=15'
 const baseUrlComp = 'https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/completion/?text='
 const dpt = ['75','77','78','91','92','93','94','95']
-//a&terr=93160%2C97%2C77300&type=StreetAddress&maximumResponses=10
 
 const renderWordResponse = (res) => {
 let wordList = [];
@@ -45,9 +46,6 @@ const getCompletionList = () => {
         console.log(err.message);
     }
 }
-
-
-
 
 const formatAdress = (adress) => {
     return adress.replaceAll(" ",'%');
@@ -82,6 +80,9 @@ const displaySuggestions = (event) => {
     longitude.innerHTML = '';
     label.innerHTML = '';
     getCoordinates()
+    
+
+    dlist.innerHTML = '';
 }
 const displayList = (event) => {
     if (inputField.value.length>4){
@@ -92,7 +93,5 @@ const displayList = (event) => {
     }
 }
 
-// getCoordinates()
 inputField.addEventListener('keypress',displayList)
 submit.addEventListener('click',displaySuggestions)
-// https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/search?q=21%20rue%20carpeaux%20Paris&limit=10&returntruegeometry=false

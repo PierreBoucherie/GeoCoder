@@ -14,12 +14,13 @@ body {
 }
 
 header {
-    height: 150px;
+    height: 100px;
     vertical-align: center;
+
 }
 
  h1 {
-    margin: auto;
+    margin: 2rem auto;
     font-size: 3.5rem;
     font-weight: 500;
 }   
@@ -27,18 +28,23 @@ header {
 h6 {
     font-size: 1.2rem;
     font-weight: 500;
-    margin: 0.8rem 0;
+    margin-bottom: 3rem;
 }
 
 #input {
-    width: 400px;
-    height: 20px;
+    width: 350px;
+    height: 25px;
     margin-bottom: 2rem;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
 
 #submit {
     height: 25px;
-
+    /* position: relative;
+    top: 0px; */
+    display: block;
+    margin: 0 auto;
 }
 
 form {
@@ -46,7 +52,10 @@ form {
     margin: 0 auto;
  }
 
-.response p {
+.container  {
+    width: 500px;
+    margin: 45px auto;
+    text-align: left;
 }
 
 .response p, .adress p {
