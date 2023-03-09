@@ -15,9 +15,12 @@
     <h1>GeoCoder</h1>
 </header>
 
-        <h6>Entrez une adresse...</h6>
-        <form id="form" autocomplete="on">
-            <input id="input" type="text" value="" placeholder="20 avenue Leon Blum, Paris">
+        <h6 id="test" >Entrez une adresse...</h6>
+        <form id="form" autocomplete="off">
+            <input id="input" type="text" value="" list='dlist' placeholder="">
+            <datalist id="dlist">
+                
+            </datalist>
             <button id="submit">SUBMIT</button>
         </form>
         
