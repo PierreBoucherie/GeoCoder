@@ -1,7 +1,7 @@
 // https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/search?q=21%20rue%20carpeaux%20Paris&limit=10&returntruegeometry=false
 //a&terr=93160%2C97%2C77300&type=StreetAddress&maximumResponses=10
 //Geocoder API variable
-const baseUrl ='https://wxs.ign.fr/essentiels/geoportail/geocodage/rest/0.1/search?q=';
+const baseUrl ='https://data.geopf.fr/geocodage/search?q=';
 const suffix ='&limit=10&returntruegeometry=false';
 //DOM variablle
 const inputField = document.querySelector('#input');
